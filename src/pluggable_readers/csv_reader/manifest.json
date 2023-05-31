@@ -1,0 +1,5 @@
+{
+  "name": "CSVReader",
+  "version": "1.0.0",
+  "plugin_script": "csv_reader.py"
+}

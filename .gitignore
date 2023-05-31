@@ -1,0 +1,8 @@
+venv/
+.idea/
+.code/
+__pycache__
+files/
+*.pyc
+.env
+.mypy_cache

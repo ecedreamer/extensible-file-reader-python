@@ -1,0 +1,5 @@
+{
+  "name": "JSONReader",
+  "version": "2.1.0",
+  "plugin_script": "json_reader.py"
+}
