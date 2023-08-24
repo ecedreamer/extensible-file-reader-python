@@ -13,7 +13,7 @@ class FileProcessor:
         self.engine = engine
         self.file_path = file_path
 
-    def process(self):
+    def read(self):
         self.engine.process(self.file_path)
 
 
@@ -30,5 +30,6 @@ def get_processor_engine() -> dict[str, dict[str, int | ProcessorInterface]]:
     all_engines = _get_core_engines()
     manager = PluginManager()
     plugin_engines = manager.load_plugins()
+   
     all_engines |= plugin_engines
     return all_engines

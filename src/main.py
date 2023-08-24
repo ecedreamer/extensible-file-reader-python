@@ -21,11 +21,12 @@ def start() -> None:
         if not all_engines.get(processor_engine_name):
             logger.error(f"Processor engine: {processor_engine_name} is not supported")
             continue
-
+        
+        
         selected_engine = all_engines.get(processor_engine_name)
         engine_obj = selected_engine.get("reader").create_engine()
         processor = FileProcessor(engine_obj, file_path)
-        processor.process()
+        processor.read()
 
 
 def main() -> None:
