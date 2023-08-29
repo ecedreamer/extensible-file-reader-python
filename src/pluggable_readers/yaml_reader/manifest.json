@@ -1,0 +1,5 @@
+{
+    "name": "YAMLReader",
+    "version": "1.0.0",
+    "plugin_script": "yaml_reader.py"
+  }

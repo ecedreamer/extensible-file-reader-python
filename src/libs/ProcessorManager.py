@@ -24,6 +24,7 @@ class PluginManager:
         plugin_module_str = ".".join(plugin_folder_str.split("/"))
         for item in plugin_folder.iterdir():
             if item.is_dir() and not item.name.startswith("_"):
+
                 manifest_path = f"{plugin_folder}/{item.name}/manifest.json"
                 plugin_script = self.__read_manifest(manifest_path, key="plugin_script")
                 version = self.__read_manifest(manifest_path, key="version")
